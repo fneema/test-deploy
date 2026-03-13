@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load(r"C:\Users\faith.neema\Downloads\logistic_regression_trained_with_11_model.pkl")
+model = model = joblib.load("logistic_regression_trained_with_11_model.pkl")
 
 st.title("Maternal & Child Risk Screening")
 
