@@ -45,19 +45,19 @@ env2 = st.selectbox("Je, una marafiki wowote wenye watoto wenye umri sawa na mto
 
 
 
-# ---- Food security items (3 questions) ----
-st.subheader("Food security")
+# ----Insufficient food intake and its physical consequences items (3 questions) ----
+st.subheader("Insufficient food intake")
 food_options = {
   
    "Rarely (once or twice in the past four weeks)": 1,
     "Sometimes (three to ten times in the past four weeks)": 2,
     "Often (more than ten times in the past four weeks)": 3
 }
-food1 = st.selectbox("In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources?", list(food_options.keys()))
-food2 = st.selectbox("In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources?", list(food_options.keys()))
-food3 = st.selectbox("In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?", list(food_options.keys()))
-food4 = st.selectbox("In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food?", list(food_options.keys()))
-food5 = st.selectbox("In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food?", list(food_options.keys()))
+food1 = st.selectbox("Did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food?", list(food_options.keys()))
+food2 = st.selectbox("Did you or any household member have to eat fewer meals in a day because there was not enough food?" , list(food_options.keys()))
+food3 = st.selectbox("Was there ever no food to eat of any kind in your household because of a lack of resources to get food?", list(food_options.keys()))
+food4 = st.selectbox("Did you or any household member go to sleep at night hungry because there was not enough food?", list(food_options.keys()))
+food5 = st.selectbox("Did you or any household member go a whole day and night without eating anything because there was not enough food?", list(food_options.keys()))
 
 food_total = food_options[food1] + food_options[food2] + food_options[food3]+food_options[food4]+food_options[food5]
 
