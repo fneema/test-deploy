@@ -85,7 +85,7 @@ if st.button("Predict"):
        
     }])
 
-    child_label = model.predict_proba(X)
+    child_label = model.predict_proba(X)[0]
 
     #st.write(f"Predicted probability: {prob:.3f}")
 
